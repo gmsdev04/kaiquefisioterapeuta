@@ -1264,126 +1264,8 @@
                     <!-- Testimonial Slider Start -->
                     <div class="testimonial-slider">
                         <div class="swiper">
-                            <div class="swiper-wrapper" data-cursor-text="Drag">
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>We understand that injuries and acute pain can happen unexpectedly. Our emergency physiotherapy services are designed to provide prompt.</p>									
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-1.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>johan duo</h3>
-                                                <p>atleta profissional</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-            
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>We understand that injuries and acute pain can happen unexpectedly. Our emergency physiotherapy services are designed to provide prompt.</p>	
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-2.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>jane smith</h3>
-                                                <p>professora aposentada</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>Entendemos que lesões e dores agudas podem acontecer inesperadamente. Nossos serviços de fisioterapia de emergência são projetados para fornecer atendimento rápido.</p>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-3.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>robert lee</h3>
-                                                <p>trabalhador da construção</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-header">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>We understand that injuries and acute pain can happen unexpectedly. Our emergency physiotherapy services are designed to provide prompt.</p>	
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-body">
-                                            <div class="author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-4.jpg" alt="">
-                                                </figure>
-                                            </div>            
-                                            <div class="author-content">
-                                                <h3>banson doe</h3>
-                                                <p>corredor de maratona</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Slide End -->
+                            <div id="testimonials-container" class="swiper-wrapper" data-cursor-text="Drag">
+                                <!-- Testimonials will be loaded dynamically from testimonials.js -->
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -1700,7 +1582,17 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
     <script src="js/wow.js"></script>
+    <!-- Testimonials js file -->
+    <script src="js/testimonials.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script>
+        // Initialize testimonials after page load
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.getElementById('testimonials-container')) {
+                window.testimonialSystem.renderTestimonials('testimonials-container');
+            }
+        });
+    </script>
 </body>
 </html>

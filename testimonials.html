@@ -417,7 +417,17 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
     <script src="js/wow.js"></script>
-    <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
+	<!-- Testimonials js file -->
+	<script src="js/testimonials.js"></script>
+	<!-- Main Custom js file -->
+	<script src="js/function.js"></script>
+	<script>
+	    // Initialize testimonials after page load
+	    document.addEventListener('DOMContentLoaded', function() {
+	        if (document.getElementById('testimonials-container-page')) {
+	            window.testimonialSystem.renderTestimonials('testimonials-container-page');
+	        }
+	    });
+	</script>
 </body>
 </html>
