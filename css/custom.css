@@ -1193,7 +1193,6 @@ header.main-header .header-sticky.active{
 .about-list-content h3{
 	font-size: 18px;
 	font-weight: 500;
-	text-transform: capitalize;
 }
 
 .about-us-footer{
@@ -1735,7 +1734,6 @@ header.main-header .header-sticky.active{
 	font-size: 18px;
 	font-weight: 500;
 	color: var(--white-color);
-	text-transform: capitalize;
 	margin: 0;
 }
 
