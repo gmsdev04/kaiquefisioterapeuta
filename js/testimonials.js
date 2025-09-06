@@ -62,6 +62,29 @@ const testimonials = [
         authorImage: "images/author-4.jpg",
         authorName: "Bruna B.",
         authorTitle: "Paciente"
+    },
+    {
+        rating: 5,
+        content: "Quebrei o platô da tíbia (osso do joelho) e tive que ficar imobilizado por um período, após a liberação do meu ortopedista fiz minha recuperação com o Kaique, um profissional muito competente e que ama o que faz, sempre atencioso, animado e disposto a explicar o por que de cada procedimento/exercício.",
+        authorImage: "images/author-4.jpg",
+        authorName: "Carlos",
+        authorTitle: "Paciente"
+    },
+    {
+        rating: 5,
+        content: "Fiz 20 sessões de fisioterapia com o Kaique devido a uma tendinite de joelho. O Kaique associa uma combinação quase perfeita entre conhecimento técnico e atenção individual. Sempre estudando e atualizado oferece o que pode existir de melhor no tratamento de reabilitação associado a uma atenção plena aquilo que vc necessita. Além de ótimas conversas.",
+        authorImage: "images/author-4.jpg",
+        authorName: "Fabio B",
+        authorTitle: "Paciente"
+    },
+    {
+        rating: 5,
+        content: "Sou corredor e, como todo corredor, dores e incômodos acabam surgindo à medida que o volume de treino aumenta. Em um episódio de fortes dores no joelho, tive a grande sorte de conhecer o Kaique.\n" +
+            "Seu profissionalismo, dedicação e conhecimento fizeram toda a diferença no meu tratamento. Mas o que realmente me impressiona é a forma humana, cuidadosa e atenciosa com que trata cada paciente.\n" +
+            "Minha gratidão e reconhecimento por esse excelente profissional!",
+        authorImage: "images/author-4.jpg",
+        authorName: "Marcelo P",
+        authorTitle: "Paciente"
     }
 ];
 
