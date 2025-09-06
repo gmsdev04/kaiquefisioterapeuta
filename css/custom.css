@@ -1089,7 +1089,6 @@ header.main-header .header-sticky.active{
 	color: var(--white-color);
 	font-size: 20px;
 	font-weight: 600;
-	text-transform: capitalize;
 	margin-bottom: 10px;
 }
 
@@ -1365,7 +1364,6 @@ header.main-header .header-sticky.active{
 .service-item .service-body h3{
 	font-size: 20px;
 	font-weight: 600;
-	text-transform: capitalize;
 	margin-bottom: 20px;
 	transition: all 0.5s ease-in-out;
 }
